@@ -24,6 +24,7 @@ requirements:
 
   host:
     - pip
+    - python
 
   run:
     - line_profiler
