@@ -13,13 +13,18 @@ source:
   {{ hash_type }}: {{ hash }}
 
 build:
-  number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 1
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   build:
     - python
     - setuptools
+
+  host:
+    - pip
+    - python
 
   run:
     - line_profiler
@@ -28,11 +33,7 @@ requirements:
 
 test:
   # On Linux, importing requires an X server
-  files:
-    - test_import.py  # [linux]
-  commands:
-    - DISPLAY=localhost:1.0 xvfb-run -a bash -c 'python test_import.py'  # [linux]
-  import:
+  imports:
     - spyder_line_profiler  # [not linux]
 
 about:
