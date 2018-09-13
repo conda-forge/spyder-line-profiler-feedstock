@@ -33,7 +33,7 @@ test:
     - test_import.py  # [linux]
   commands:
     - DISPLAY=localhost:1.0 xvfb-run -a bash -c 'python test_import.py'  # [linux]
-  import:
+  imports:
     - spyder_line_profiler  # [not linux]
 
 about:
