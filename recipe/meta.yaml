@@ -15,7 +15,7 @@ source:
 build:
   number: 1
   noarch: python
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   build:
@@ -26,6 +26,9 @@ requirements:
     - line_profiler
     - python
     - spyder >=3
+
+  host:
+    - pip
 
 test:
   # On Linux, importing requires an X server
