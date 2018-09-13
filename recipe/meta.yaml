@@ -22,13 +22,13 @@ requirements:
     - python
     - setuptools
 
+  host:
+    - pip
+
   run:
     - line_profiler
     - python
     - spyder >=3
-
-  host:
-    - pip
 
 test:
   # On Linux, importing requires an X server
