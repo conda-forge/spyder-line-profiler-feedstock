@@ -21,11 +21,9 @@ requirements:
   build:
     - python
     - setuptools
-
   host:
     - pip
     - python
-
   run:
     - line_profiler
     - python
