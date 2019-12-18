@@ -1,7 +1,7 @@
 {% set name = "spyder-line-profiler" %}
-{% set version = "0.1.1" %}
+{% set version = "0.2.0" %}
 {% set hash_type = "sha256" %}
-{% set hash = "9f6170589073a5f56615fc1e6046f64c6c9406dc4094cc46214e5d8ca7bb3561" %}
+{% set hash = "4a5b832cc683cc6b8fe2cbece569245cf6f4bd43a7e8761d4a22a9ad8864bdb2" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
   {{ hash_type }}: {{ hash }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
@@ -27,7 +27,7 @@ requirements:
   run:
     - line_profiler
     - python
-    - spyder >=3
+    - spyder >=4,<5
 
 test:
   # On Linux, importing requires an X server
