@@ -1,6 +1,6 @@
 {% set name = "spyder-line-profiler" %}
-{% set version = "0.3.0" %}
-{% set hash = "17a9900d3adbf4c6e837b5026a6ee2bb1c9d15a32f5f96ba31b6ef3216168899" %}
+{% set version = "0.3.1" %}
+{% set hash = "12df55049fe24ca524f1169e0f37ea8dfa61a9f4f217ac38fab321523f37b538" %}
 
 package:
   name: {{ name|lower }}
