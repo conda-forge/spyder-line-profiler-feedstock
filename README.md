@@ -150,5 +150,6 @@ Feedstock Maintainers
 =====================
 
 * [@ccordoba12](https://github.com/ccordoba12/)
+* [@dalthviz](https://github.com/dalthviz/)
 * [@jitseniesen](https://github.com/jitseniesen/)
 
