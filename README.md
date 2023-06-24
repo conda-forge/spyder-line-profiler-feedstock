@@ -1,11 +1,11 @@
-About spyder-line-profiler
-==========================
+About spyder-line-profiler-feedstock
+====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/spyder-line-profiler-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/spyder-ide/spyder-line-profiler
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/spyder-line-profiler-feedstock/blob/main/LICENSE.txt)
 
 Summary: Spyder plugin that integrates the Python line profiler.
 
