@@ -19,10 +19,10 @@ build:
 requirements:
   build:
     - python
-    - setuptools
   host:
     - pip
     - python >=3.8
+    - setuptools
   run:
     - line_profiler
     - python >=3.8
