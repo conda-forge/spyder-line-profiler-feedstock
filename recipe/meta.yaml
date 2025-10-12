@@ -27,7 +27,7 @@ requirements:
     - line_profiler
     - python >={{ python_min }}
     - qtawesome
-    - spyder >=6,<7
+    - spyder >=6.1,<6.2
 
 test:
   # On Linux, importing requires an X server
