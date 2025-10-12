@@ -1,6 +1,6 @@
 {% set name = "spyder-line-profiler" %}
-{% set version = "0.4.1" %}
-{% set hash = "c377bc9963c4474c4714bdacc4d002b43cd8311b4348c479b419d830cc816a82" %}
+{% set version = "0.4.2" %}
+{% set hash = "489fe00bace052f7b5b90c76fb2137afe4006a0d9ef5bef72a31269355f21321" %}
 
 package:
   name: {{ name|lower }}
@@ -27,7 +27,7 @@ requirements:
     - line_profiler
     - python >={{ python_min }}
     - qtawesome
-    - spyder >=6,<7
+    - spyder >=6.1,<6.2
 
 test:
   # On Linux, importing requires an X server
